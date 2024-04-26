@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,19 +21,17 @@ namespace MyTextEditor
         private string FileName;
         private string TextTitle;
         private string OldText;
-        private MainForm mainForm;
         bool SaveFlag = true;
         Timer timer = new Timer();
         Encoding encoding = Encoding.UTF8;
-        public EditorForm(MainForm form) : this(null,null,form)
+        public EditorForm() : this(null,null)
         {
             
         }
-        public  EditorForm(string filePath, string fileName, MainForm parent)
+        public  EditorForm(string filePath, string fileName)
         {
             InitializeComponent();
             SetFileInfo(filePath, fileName);
-            this.mainForm = parent;
             this.Text = FileName ?? "无标题";
             autoMulToolStripMenuItem.CheckedChanged += (obj, e) => { textBox1.WordWrap = autoMulToolStripMenuItem.Checked; };
             stateToolStripMenuItem.CheckStateChanged += (obj, e) => { label1.Text = GetState(); timer.Enabled = stateToolStripMenuItem.Checked; panel1.Visible = stateToolStripMenuItem.Checked;   };
@@ -40,7 +39,7 @@ namespace MyTextEditor
             stateToolStripMenuItem.Checked = true;
             this.autoMulToolStripMenuItem.CheckOnClick = true;
             this.autoMulToolStripMenuItem.Checked = true;
-            newTexttoolStripMenuItem.Click += new EventHandler(Newinit);
+            newTexttoolStripMenuItem.Click += new EventHandler(NewInit);
             newFormToolStripMenuItem.Click += new EventHandler(OpenNewForm);
             newFormOpenToolStripMenuItem.Click += new EventHandler(OpenNewFormHasFile);
             saveToolStripMenuItem.Click += new EventHandler(SaveFile);
@@ -64,7 +63,6 @@ namespace MyTextEditor
             this.label1.Text = "第1行 ，第1列";
             textBox1.TextChanged += (obj, e) =>
             { 
-
                 SetSaveFlag(OldText == textBox1.Text);
             };
             //状态栏的显示
@@ -84,16 +82,19 @@ namespace MyTextEditor
                 {
                     using (StreamReader sr = new StreamReader(FilePath, encoding))
                     {
+                        textBox1.Text = string.Empty;
                         // 读取文件内容
-                        string content = GetFileEncodingText( await sr.ReadToEndAsync());
+                        while (!sr.EndOfStream)
+                        {
+                            char[] buffer = new char[40960]; // 读取缓冲区大小
+                            int charsRead = await sr.ReadAsync(buffer, 0, buffer.Length);
+                            string textPart = new string(buffer, 0, charsRead);
+                            AppendLineToTextBox(GetFileEncodingText(textPart));
+                        }
                         // 将内容设置到 TextBox 中
-                        OldText = content;
-                        Action test = () => {
-                            textBox1.Text = content;
-                            SetSaveFlag(true);
-                            textBox1.ReadOnly = false;
-                        };
-                        textBox1.BeginInvoke(test);
+                        OldText = textBox1.Text;
+                        SetSaveFlag(true);
+                        textBox1.ReadOnly = false;
                     }
                 });
 
@@ -204,7 +205,7 @@ namespace MyTextEditor
 
         //新建
 
-        private void Newinit(object o, EventArgs e) 
+        private void NewInit(object o, EventArgs e) 
         {
             if (textBox1.ReadOnly) return;
             SetFileInfo(null, null);
@@ -229,55 +230,66 @@ namespace MyTextEditor
             {
                 if (!string.IsNullOrEmpty(openFileDialog1.FileName))
                 {
-                    textBox1.ReadOnly = true;
-                    Task.Run(async () => {
-                        using (StreamReader sr = new StreamReader(openFileDialog1.FileName, encoding))
-                        {
-                            // 读取文件内容
-                            string content = GetFileEncodingText(await sr.ReadToEndAsync());
-                            // 将内容设置到 TextBox 中
-                            SetFileInfo(openFileDialog1.FileName, Path.GetFileNameWithoutExtension(openFileDialog1.FileName));
-                            OldText = content;
-                            Action test = () => {
-                                textBox1.Text = content;
+                    if (File.Exists(openFileDialog1.FileName)) 
+                    {
+                        textBox1.ReadOnly = true;
+                        Task.Run(async () => {
+                            using (StreamReader sr = new StreamReader(openFileDialog1.FileName, encoding))
+                            {
+                                textBox1.Text = string.Empty;
+                                SetFileInfo(openFileDialog1.FileName, Path.GetFileNameWithoutExtension(openFileDialog1.FileName));
+                                // 读取文件内容
+                                while (!sr.EndOfStream)
+                                {
+                                    char[] buffer = new char[40960]; // 读取缓冲区大小
+                                    int charsRead = await sr.ReadAsync(buffer, 0, buffer.Length);
+                                    string textPart = new string(buffer, 0, charsRead);
+                                    AppendLineToTextBox(GetFileEncodingText(textPart));
+                                }
+                                // 将内容设置到 TextBox 中
+
+                                OldText = textBox1.Text;
                                 SetSaveFlag(true);
                                 textBox1.ReadOnly = false;
-                            };
-                            textBox1.BeginInvoke(test);
-                           
-                        }
-                    });
-                    // 使用 StreamReader 打开文件
-                    
-                }
-                
-                
+                            }
+                        });
+                    }              
+                }  
             }
         }
+        //批量添加到文本框
+        private void AppendLineToTextBox(string line)
+        {
+            if (textBox1.InvokeRequired)
+            {
+                textBox1.Invoke((Action)(() => AppendLineToTextBox(line)));
+            }
+            else
+            {
+                textBox1.AppendText(line);
+            }
+        }
+
+
 
         // 新窗口
         private void OpenNewForm(object o, EventArgs e) 
         {
-            if (mainForm != null) 
-            {
-                mainForm.addForm(new EditorForm(mainForm));
-            }
-                
+            Process.Start(Application.ExecutablePath);    
         }
 
         //新窗口打开
         private void OpenNewFormHasFile(object o, EventArgs e)
         {
-            if (mainForm != null) 
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "文本文件(*.txt)|*.txt";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                OpenFileDialog openFileDialog1 = new OpenFileDialog();
-                openFileDialog1.Filter = "文本文件(*.txt)|*.txt";
-                if (openFileDialog1.ShowDialog() == DialogResult.OK) 
-                {
-                    mainForm.addForm(new EditorForm(openFileDialog1.FileName, Path.GetFileNameWithoutExtension(openFileDialog1.FileName), mainForm));
-                }
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = Application.ExecutablePath;
+                startInfo.Arguments = $"\"{openFileDialog1.FileName}\" \"{Path.GetFileNameWithoutExtension(openFileDialog1.FileName)}\""; // 传递的参数
+                Process.Start(startInfo);
             }
-                
         }
 
         //保存
@@ -458,7 +470,7 @@ namespace MyTextEditor
             if (keyData == (Keys.Control | Keys.N))
             {
                 // 新建
-                Newinit(null, null);
+                NewInit(null, null);
                 return true;
             }
             if (keyData == (Keys.Control | Keys.M))
