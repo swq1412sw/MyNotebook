@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|e:\\onedrive note\\onedrive\\note\\study\\studycode\\c#\\winform\\demoforstudy\\mytexteditor\\texteditor\\editorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\editorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\editorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\editorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\replaceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\replaceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\replaceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\replaceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\findtextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\findtextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\findtextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\findtextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\kmputil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\kmputil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\closeingaskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\closeingaskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\util\\closeingaskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\util\\closeingaskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\texteditor\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:texteditor\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F571E8BA-4FFE-4400-B1E1-0C9D3470DB24}|MyTextEditor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReplaceForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\ReplaceForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\ReplaceForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\ReplaceForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TextEditor\\Util\\ReplaceForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T13:10:12.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FindTextForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\FindTextForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\FindTextForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\FindTextForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TextEditor\\Util\\FindTextForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T13:09:25.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CloseingAskForm.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\CloseingAskForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\CloseingAskForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\CloseingAskForm.cs",
+              "RelativeToolTip": "TextEditor\\Util\\CloseingAskForm.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBMAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T09:56:19.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CloseingAskForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\CloseingAskForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\CloseingAskForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\CloseingAskForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TextEditor\\Util\\CloseingAskForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T09:52:17.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditorForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\EditorForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\EditorForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\EditorForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TextEditor\\EditorForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T09:38:57.685Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReplaceForm.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\ReplaceForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\ReplaceForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\ReplaceForm.cs",
+              "RelativeToolTip": "TextEditor\\Util\\ReplaceForm.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAYwE4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T03:25:07.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FindTextForm.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\FindTextForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\FindTextForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\FindTextForm.cs",
+              "RelativeToolTip": "TextEditor\\Util\\FindTextForm.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T13:10:24.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KMPUtil.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\KMPUtil.cs",
+              "RelativeDocumentMoniker": "TextEditor\\Util\\KMPUtil.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\Util\\KMPUtil.cs",
+              "RelativeToolTip": "TextEditor\\Util\\KMPUtil.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:56:34.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\MainForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\MainForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\MainForm.cs",
+              "RelativeToolTip": "TextEditor\\MainForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T08:05:52.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T08:05:17.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\MainForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\MainForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\MainForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TextEditor\\MainForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T08:04:59.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditorForm.cs",
+              "DocumentMoniker": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\EditorForm.cs",
+              "RelativeDocumentMoniker": "TextEditor\\EditorForm.cs",
+              "ToolTip": "E:\\onedrive note\\OneDrive\\note\\study\\StudyCode\\C#\\winform\\DemoForStudy\\MyTextEditor\\TextEditor\\EditorForm.cs",
+              "RelativeToolTip": "TextEditor\\EditorForm.cs",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAiwO0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:52:20.657Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
