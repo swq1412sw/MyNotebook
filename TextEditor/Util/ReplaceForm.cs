@@ -66,7 +66,7 @@ namespace MyTextEditor.TextEditor.Util
             string findText = textBox1.Text;
             string replaceText = textBox2.Text;
             string newText = oldText.Replace(findText,replaceText);
-            Task<int> numTask = Task<int>.Run(()=> KMPUtil.KMPSearch(textBox.Text, textBox1.Text).Count()); 
+            Task<int> numTask = Task<int>.Run(()=> KMPUtil.KMPSearch(oldText, findText).Count()); 
             int re = Environment.TickCount;
             textBox.Text = newText;
             int end = Environment.TickCount;
