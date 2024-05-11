@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text;
 
 namespace MyTextEditor.TextEditor.Util
 {
@@ -63,32 +54,24 @@ namespace MyTextEditor.TextEditor.Util
             }
         }
 
-        private void ReplaceAll_click(object sender, EventArgs e)
+        private async void ReplaceAll_click(object sender, EventArgs e)
         {
             if (textBox1.Text == textBox2.Text) 
             {
                 MessageBox.Show("无需更换");
                 return;
             }
-            // 使用StringBuilder来构建新的文本内容
-            StringBuilder newText = new StringBuilder(textBox.Text);
-            int index = KMPUtil.Search(newText.ToString(), textBox1.Text, false);
-            int count = 0;
-            int initlengh = 0;
-            // 循环替换所有匹配项
-            while (index != -1)
-            {
-                newText.Remove(index+initlengh, textBox1.TextLength);
-                newText.Insert(index+initlengh, textBox2.Text);
-                count++;
-                int temp = index + initlengh;
-                index = KMPUtil.Search(newText.ToString().Substring(temp+textBox1.SelectionLength), textBox1.Text, false);
-                initlengh = temp + textBox1.SelectionLength;
-            }
-
-            // 更新textBox的内容
-            textBox.Text = newText.ToString();
-            MessageBox.Show($"全部更换完成，一共{count}处被替换");
+            int start =Environment.TickCount;
+            string oldText = textBox.Text;
+            string findText = textBox1.Text;
+            string replaceText = textBox2.Text;
+            string newText = oldText.Replace(findText,replaceText);
+            Task<int> numTask = Task<int>.Run(()=> KMPUtil.KMPSearch(textBox.Text, textBox1.Text).Count()); 
+            int re = Environment.TickCount;
+            textBox.Text = newText;
+            int end = Environment.TickCount;
+            int count = await numTask;
+            MessageBox.Show($"全部更换完成，一共{count}处被替换,查找替换用时{re-start}，渲染用时{end-re}，总用时{end-start}");
         }
 
             private void Cancle_click(object sender, EventArgs e)

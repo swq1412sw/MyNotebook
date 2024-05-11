@@ -28,66 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(386, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "数据还未保持，关闭将丢失数据，是否继续关闭";
+            label1.AutoSize = true;
+            label1.Location = new Point(34, 57);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(388, 24);
+            label1.TabIndex = 0;
+            label1.Text = "数据还未保持，关闭将丢失数据，是否继续关闭";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(46, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "退出";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Location = new Point(56, 167);
+            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 51);
+            button1.TabIndex = 1;
+            button1.Text = "退出";
+            button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(163, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 38);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "保存后退出";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Location = new Point(199, 167);
+            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(143, 51);
+            button2.TabIndex = 2;
+            button2.Text = "保存后退出";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(302, 125);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 38);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "取消";
-            this.button3.UseVisualStyleBackColor = true;
+            button3.Location = new Point(369, 167);
+            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Name = "button3";
+            button3.Size = new Size(110, 51);
+            button3.TabIndex = 3;
+            button3.Text = "取消";
+            button3.UseVisualStyleBackColor = true;
             // 
             // CloseingAskForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(452, 198);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "CloseingAskForm";
-            this.ShowIcon = false;
-            this.Text = "提示";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(11F, 24F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            ClientSize = new Size(552, 264);
+            ControlBox = false;
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 4, 4, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "CloseingAskForm";
+            ShowIcon = false;
+            Text = "提示";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

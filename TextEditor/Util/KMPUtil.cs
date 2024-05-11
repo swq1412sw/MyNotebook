@@ -86,6 +86,40 @@ namespace MyTextEditor.TextEditor.Util
             }
             return -1;// No match found
         }
+
+        public static List<int> KMPSearch(string text, string pattern)
+        {
+            List<int> indices = new List<int>();
+            int[] lps = ComputeFailureFunction(pattern);
+            int i = 0;
+            int j = 0;
+            while (i < text.Length)
+            {
+                if (pattern[j] == text[i])
+                {
+                    j++;
+                    i++;
+                }
+                if (j == pattern.Length)
+                {
+                    indices.Add(i - j);
+                    i = i - j + pattern.Length; // 开始下一次搜索的位置
+                    j = 0; // 重置pattern的索引
+                }
+                else if (i < text.Length && pattern[j] != text[i])
+                {
+                    if (j != 0)
+                    {
+                        j = lps[j - 1];
+                    }
+                    else
+                    {
+                        i = i + 1;
+                    }
+                }
+            }
+            return indices;
+        }
     }
 
 

@@ -22,7 +22,7 @@ namespace MyTextEditor
         private string TextTitle;
         private string OldText;
         bool SaveFlag = true;
-        Timer timer = new Timer();
+        System.Windows.Forms.Timer timer = new();
         Encoding encoding = Encoding.UTF8;
         public EditorForm() : this(null,null)
         {
